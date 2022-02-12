@@ -36,7 +36,10 @@ contract WavePortal {
 		15-minutes bigger than the last timestamp we stored
 		*/
 
-		require(lastWavedAt[msg.sender] + 15 minutes < block.timestamp, 'Wait 15min');
+		require(
+			lastWavedAt[msg.sender] + 30 seconds < block.timestamp,
+			'Wait 30 seconds before waving again'
+		);
 
 		//update the current timestamp we have for the user
 		lastWavedAt[msg.sender] = block.timestamp;

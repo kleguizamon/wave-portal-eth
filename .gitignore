@@ -7,5 +7,5 @@ migrations/
 coverage*
 .env
 .prettierrc
-.solhint
+.solhint.json
 
