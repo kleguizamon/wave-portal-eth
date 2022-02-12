@@ -12,11 +12,6 @@
     "solhint": "./node_modules/.bin/solhint -f table contracts/**/*.sol",
     "prettier:solidity": "./node_modules/.bin/prettier --write contracts/**/*.sol"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run prettier:solidity"
-    }
-  },
   "author": "Kevin",
   "license": "MIT",
   "devDependencies": {
