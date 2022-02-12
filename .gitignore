@@ -3,6 +3,8 @@ cache/
 build/
 typechain/
 artifacts/
+migrations/
 coverage*
 .env
 .prettierrc
+.solhint
